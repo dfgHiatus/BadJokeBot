@@ -16,6 +16,8 @@ async def on_message(message):
     if message.author == client.user:
         return
 
+    # TODO
+    # - Condense the try-except into a function
     print(message.content)
     if message.content.lower().startswith('!yomomma'):
         try:
